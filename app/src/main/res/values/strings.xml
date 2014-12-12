@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- GENERAL PURPOSE STRINGS -->
+    <string name="button_okay">Okay</string>
+    <!-- LOGIN ACTIVITY -->
+    <string name="login_signUp_text">No account? Sign up now!</string>
+    <string name="login_signUp_button">Sign Up</string>
+    <!-- SIGN UP ACTIVITY -->
+    <string name="activity_sign_up_password_incorrect_title">Incorrect password</string>
+    <string name="activity_sign_up_password_incorrect_match">Please make sure both passwords match.</string>
+    <string name="activity_sign_up_username_incorrect_title">Invalid username</string>
+    <string name="activity_sign_up_username_incorrect_exists">This username is already taken.</string>
+    <string name="activity_sign_up_username_created_title">Success</string>
+    <string name="activity_sign_up_username_created">Sign up complete! Please login with your new credentials.</string>
 
+    <!-- MAIN ACTIVITY -->
     <string name="app_name">MMORPG-android</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">MMORPG</string>
+
+
+    <string name="title_activity_main">Main</string>
+
     <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
 
 </resources>
