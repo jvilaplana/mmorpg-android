@@ -90,7 +90,7 @@ public class SignUpActivity extends ActionBarActivity {
                                     new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
-                                            
+
                                         }
                                     });
                             dlgAlert.create().show();

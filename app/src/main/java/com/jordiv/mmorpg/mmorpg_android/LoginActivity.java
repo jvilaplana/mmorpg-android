@@ -38,8 +38,15 @@ public class LoginActivity extends ActionBarActivity {
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         String token = settings.getString("token", null);
         if(token != null) {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            Integer player = settings.getInt("player", -1);
+            if(player > 0) {
+                Intent intent = new Intent(this, MainActivity2.class);
+                startActivity(intent);
+            }
+            else {
+                Intent intent = new Intent(this, CreatePlayerActivity.class);
+                startActivity(intent);
+            }
             finish();
         }
 
@@ -67,7 +74,7 @@ public class LoginActivity extends ActionBarActivity {
 
                 String token = settings.getString("token", null);
                 if(token != null) {
-                    Intent intent = new Intent(v.getContext(), MainActivity.class);
+                    Intent intent = new Intent(v.getContext(), MainActivity2.class);
                     startActivity(intent);
                     finish();
                 }
